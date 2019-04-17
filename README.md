@@ -9,7 +9,7 @@ Las aplicaciones con las que contará serán:
 4. Menú de las cafeterias de Campus sur UPM.
 
 Progreso actual:
-1. 5%
-2. 0%
-3. 0%
-4. 0%
+1. 25%
+2. 5%
+3. 5%
+4. 5%
