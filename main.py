@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+from hex2dec2bin import *
+
 
 app = Flask(__name__)
 
