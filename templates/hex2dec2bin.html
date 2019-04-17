@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+            function hex2dec2bin() {
+            document.hexadecimal.dec1.value = 'decimal'
+            document.hexadecimal.bin1.value = 'binario'
+            }
+
+            function dec2hex2bin() {
+            document.decimal.hex2.value = 'hexadecimal'
+            document.decimal.bin2.value = 'binario'
+            }
+
+            function bin2dec2hex() {
+            document.binary.hex3.value = 'hexadecimal'
+            document.binary.dec3.value = 'decimal'
+            }
+
+    </script>
+
     <title>WebApps:Hex-Dec-Bin</title>
 </head>
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <a class="navbar-brand" href="#">WebApps</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Home</a>
+                    <a class="nav-item nav-link active" href="/hex-dec-bin">Hex-Dec-Bin <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/rubik">Rubik</a>
+                    <a class="nav-item nav-link" href="/divisas">Divisas</a>
+                    <a class="nav-item nav-link" href="/upm-menu">Menú UPM</a>
+                    <a class="nav-item nav-link" href="https://github.com/sergylopez21/WebApps" target="_blank">GitHub</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+              </div>
+        </nav>
 
+        <form name="hexadecimal">
+            <div class="card-body" style="font-family:verdana; text-align:center; padding:0px; margin:0px">
+                <h3>HEXADECIMAL</h3>
+                <p>Introduce tu valor <b>Hexadecimal</b></p>
+              </div>
+            <div style="text-align:center">
+                <input name="hex1" id="hex">
+                <input name="dec1" id="dec">
+                <input name="bin1" id="bin">
+            </div>
+            <input class="btn btn-primary" type="button" onclick="hex2dec2bin()" value="Calcular">
+        </div>
+        </form>
+
+        <form name="decimal">
+            <div class="card-body" style="font-family:verdana; text-align:center; padding:0px; margin:0px">
+                <h3>DECIMAL</h3>
+                <p>Introduce tu valor <b>Decimal</b></p>
+              </div>
+            <div style="text-align:center">
+                <input name="dec2">
+                <input name="hex2">
+                <input name="bin2">
+            </div>
+            <input class="btn btn-primary" type="button" onclick="dec2hex2bin()" value="Calcular">
+        </div>
+        </form>
+
+        <form name="binary">
+            <div class="card-body" style="font-family:verdana; text-align:center; padding:0px; margin:0px">
+                <h3>BINARIO</h3>
+                <p>Introduce tu valor <b>Binario</b></p>
+              </div>
+            <div style="text-align:center">
+                <input name="bin3">
+                <input name="dec3">
+                <input name="hex3">
+            </div>
+            <input class="btn btn-primary" type="button" onclick="bin2dec2hex()" value="Calcular">
+        </div>
+        </form>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
