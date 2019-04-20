@@ -46,17 +46,17 @@
               </div>
         </nav>
 
-        <form name="hexadecimal">
+        <form name="hexadecimal" action="http://localhost:8000/hex-dec-bin/api/hex" method="get">
             <div class="card-body" style="font-family:verdana; text-align:center; padding:0px; margin:0px">
                 <h3>HEXADECIMAL</h3>
                 <p>Introduce tu valor <b>Hexadecimal</b></p>
               </div>
             <div style="text-align:center">
-                <input name="hex1" id="hex">
-                <input name="dec1" id="dec">
-                <input name="bin1" id="bin">
+                <input name="hex1" placeholder="hexadecimal">
+                <input name="dec1" placeholder="decimal">
+                <input name="bin1" placeholder="binary">
             </div>
-            <input class="btn btn-primary" type="button" onclick="hex2dec2bin()" value="Calcular">
+            <input class="btn btn-primary" type="submit" onclick="hex2dec2bin()" value="Calcular" >
         </div>
         </form>
 
