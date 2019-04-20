@@ -15,4 +15,3 @@ def bin2dec(num):
 
 def bin2hex(num):
     return hex(int(num, 2))[2:].zfill(int((len(num)/4)))
-
