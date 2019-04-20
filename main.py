@@ -15,14 +15,14 @@ def hex2dec2bin():
     return render_template('hex2dec2bin.html')
 
 
-@app.route('/hex-dec-bin/api/hex', methods=['GET'])
+""""@app.route('/hex-dec-bin/api/hex', methods=['GET'])
 def h2d2bapi():
     if not request.method == 'GET':
         return 'error'
     else:
         num = request.form['hex1']
         return [{'hex': num, 'dec': bin2dec(hex2bin(num)), 'bin': hex2bin(num)}]
-
+"""
 @app.route('/rubik')
 def rubick():
     return render_template('rubik.html')
